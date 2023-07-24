@@ -39,6 +39,11 @@
             bindings = <&kp LC(V)>;
             key-positions = <18 19>;
         };
+
+        new_combo {
+            bindings = <&kp LA(PRINTSCREEN)>;
+            key-positions = <28 29>;
+        };
     };
 
     macros {
