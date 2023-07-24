@@ -27,6 +27,35 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        copy {
+            bindings = <&copy>;
+            key-positions = <16 17>;
+        };
+
+        paste {
+            bindings = <&paste>;
+            key-positions = <18 19>;
+        };
+    };
+
+    macros {
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            label = "COPY";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp C>;
+        };
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            label = "PASTE";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_CONTROL &kp V>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
