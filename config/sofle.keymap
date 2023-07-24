@@ -31,12 +31,12 @@
         compatible = "zmk,combos";
 
         copy {
-            bindings = <&kp K_COPY>;
+            bindings = <&copy>;
             key-positions = <16 17>;
         };
 
         paste {
-            bindings = <&kp K_PASTE>;
+            bindings = <&paste>;
             key-positions = <18 19>;
         };
     };
