@@ -54,6 +54,11 @@
             bindings = <&kp LC(X)>;
             key-positions = <29 28>;
         };
+
+        new_combo {
+            bindings = <&kp LS(LC(L))>;
+            key-positions = <30 31>;
+        };
     };
 
     macros {
@@ -61,13 +66,7 @@
             compatible = "zmk,behavior-macro";
             label = "COPY";
             #binding-cells = <0>;
-            bindings = <&kp LC(C)>;
-        };
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            label = "PASTE";
-            #binding-cells = <0>;
-            bindings = <&kp LC(V)>;
+            bindings = <&kp undefined>;
         };
     };
 
