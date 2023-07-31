@@ -55,7 +55,7 @@
             key-positions = <29 28>;
         };
 
-        new_combo {
+        password {
             bindings = <&kp LS(LC(L))>;
             key-positions = <30 31>;
         };
