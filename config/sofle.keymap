@@ -40,25 +40,28 @@
             key-positions = <18 19>;
         };
 
-        new_combo {
+        pscreen {
             bindings = <&kp LA(PRINTSCREEN)>;
             key-positions = <28 29>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <19 20>;
+        };
+
+        pass {
+            bindings = <&kp LC(LS(L))>;
+            key-positions = <40 41>;
+        };
+
+        cut {
+            bindings = <&kp LC(C)>;
+            key-positions = <16 15>;
         };
     };
 
     macros {
-        copy: copy {
-            compatible = "zmk,behavior-macro";
-            label = "COPY";
-            #binding-cells = <0>;
-            bindings = <&kp LC(C)>;
-        };
-        paste: paste {
-            compatible = "zmk,behavior-macro";
-            label = "PASTE";
-            #binding-cells = <0>;
-            bindings = <&kp LC(V)>;
-        };
     };
 
     keymap {
@@ -141,11 +144,11 @@
 
         Tetris {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans    &trans        &trans           &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans    &trans  &kp UP_ARROW           &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &kp LEFT      &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
-&kp LEFT_SHIFT   &kp Z   &kp X  &trans  &trans  &trans  &trans  &trans     &trans    &trans        &trans           &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans   &to 0  &kp SPACE    &trans        &trans           &trans
+        &trans  &trans  &kp F3  &kp F4            &trans     &trans                     &trans    &trans        &trans           &trans  &trans  &trans
+        &trans   &kp Q   &kp W   &kp E            &trans     &trans                     &trans    &trans  &kp UP_ARROW           &trans  &trans  &trans
+        &trans   &kp A   &kp S   &kp D            &trans     &trans                     &trans  &kp LEFT      &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
+&kp LEFT_SHIFT   &kp Z   &kp X  &trans            &trans     &trans  &trans  &trans      &kp N    &trans        &trans           &trans  &trans  &trans
+                        &trans  &trans  &kp LEFT_CONTROL  &kp SPACE  &trans   &to 0  &kp SPACE    &trans        &trans           &trans
             >;
         };
     };
