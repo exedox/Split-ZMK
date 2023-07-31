@@ -110,6 +110,7 @@
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            label = "low";
         };
 
         raise_layer {
@@ -148,14 +149,16 @@
             >;
         };
 
-        Tetris {
+        Games {
             bindings = <
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans    &trans        &trans           &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans    &trans  &kp UP_ARROW           &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans                     &trans  &kp LEFT      &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
-&kp LEFT_SHIFT   &kp Z   &kp X  &trans  &trans  &trans  &trans  &trans     &trans    &trans        &trans           &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans   &to 0  &kp SPACE    &trans        &trans           &trans
+        &trans  &trans  &trans  &trans         &trans     &trans                     &trans    &trans        &trans           &trans  &trans  &trans
+        &trans   &kp Q   &kp W   &kp E         &trans     &trans                     &trans    &trans  &kp UP_ARROW           &trans  &trans  &trans
+        &trans   &kp A   &kp S   &kp D         &trans     &trans                     &trans  &kp LEFT      &kp DOWN  &kp RIGHT_ARROW  &trans  &trans
+&kp LEFT_SHIFT   &kp Z   &kp X   &kp C         &trans     &trans  &trans  &trans     &trans     &kp M         &kp N           &trans  &trans  &trans
+                        &trans  &trans  &kp LC(SPACE)  &kp SPACE  &trans   &to 0  &kp SPACE    &trans        &trans           &trans
             >;
+
+            label = "Games";
         };
     };
 };
