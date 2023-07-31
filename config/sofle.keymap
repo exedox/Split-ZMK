@@ -54,11 +54,6 @@
             bindings = <&kp LC(X)>;
             key-positions = <29 28>;
         };
-
-        password {
-            bindings = <&kp LS(LC(L))>;
-            key-positions = <30 31>;
-        };
     };
 
     macros {
