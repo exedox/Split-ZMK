@@ -56,7 +56,7 @@
         };
 
         cut {
-            bindings = <&kp LC(C)>;
+            bindings = <&kp LC(X)>;
             key-positions = <16 15>;
         };
     };
